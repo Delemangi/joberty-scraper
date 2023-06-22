@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "joberty-scraper"
+version = "0.1.0"
+description = "Joberty scraper"
+authors = ["Delemangi <milev.stefan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "joberty_scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.2"
+requests = "^2.31.0"
+selenium = "^4.10.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pandas-stubs = "^2.0.2.230605"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
